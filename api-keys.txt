@@ -1,0 +1,15 @@
+API Key: 06bc84781f229f536a94bbd8a03ca3eb58fda0d5c1a235e4a89f89eec8a06480
+API Secret: 44e3c89c026dfb6dcc5168d51cb2c7b27824a64e1ad1a0c73a1185ecd12c26bf
+
+Bitmex:
+API_key: R4SV7ZCl1BJsa3IDgYFs6hU6
+Secret: ZP_tCR3rOGXW4fwY7wZQSzUPqic5lwcAP19sJ_einqVM4erU
+
+"""Hi,
+Ideally I recommend to apply what we did in the course: new functionality = new interface component.
+You can have a tk.Label that is regularly updated, like the ones of the Watchlist, and have an infinite loop in binance.py that regularly fetches the balance data
+def _update_balance(self):
+    while True:
+        self.get_balances()
+        time.sleep(3)
+Then run the _update_balance() method in a Thread, and in root_component.py you just pick the balance data with _update_ui()"""
